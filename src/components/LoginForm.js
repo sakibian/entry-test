@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './LoginForm.css';
 
-function LoginForm() {
+function LoginForm({ onLogin }) {
   const [formData, setFormData] = useState({
     name: '',
     password: ''
@@ -17,8 +17,8 @@ function LoginForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically handle the login logic
-    console.log('Form submitted:', formData);
+    // Call the onLogin prop with the form data
+    onLogin(formData);
   };
 
   return (
