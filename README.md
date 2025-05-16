@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# zipBoard Junior Position Test Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a test repository for the zipBoard junior position application process. This project demonstrates a simple React application with a login form and Cypress testing setup.
+
+## Important Note
+
+This repository is for testing purposes only. Please fork this repository to your own account and do not modify this original repository. All your work should be done in your forked version.
+
+## Required Technologies
+
+To run this project locally, you need to have the following installed:
+
+- Node.js (version 18 or higher)
+- npm (comes with Node.js)
+- Git
+
+## Getting Started
+
+1. Fork this repository to your own account
+2. Clone your forked repository:
+   ```bash
+   git clone <your-forked-repo-url>
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+   The application will be available at [http://localhost:3000](http://localhost:3000)
+
+## Testing with Cypress
+
+This project uses Cypress for end-to-end testing. To run the tests:
+
+1. Make sure the development server is running (`npm start`)
+2. In a new terminal, you can run Cypress in two ways:
+
+   ### Open Cypress Test Runner (Interactive Mode)
+   ```bash
+   npm run cypress:open
+   ```
+   This will open the Cypress Test Runner UI where you can:
+   - Choose your preferred browser
+   - See all test files
+   - Run tests interactively
+   - Watch tests run in real-time
+
+   ### Run Tests in Headless Mode
+   ```bash
+   npm run cypress:run
+   ```
+   This will run all tests in the terminal without opening the UI.
+
+   ### Run Tests with Dev Server
+   ```bash
+   npm run test:e2e
+   ```
+   This command will:
+   1. Start the development server
+   2. Wait for it to be available
+   3. Run all Cypress tests
+   4. Shut down the server when done
+
+## Project Structure
+
+```
+├── src/
+│   ├── components/
+│   │   ├── LoginForm.js
+│   │   ├── LoginForm.css
+│   │   ├── Welcome.js
+│   │   └── Welcome.css
+│   ├── App.js
+│   └── App.css
+├── cypress/
+│   ├── e2e/
+│   │   └── login.cy.js
+│   └── support/
+│       ├── commands.js
+│       └── e2e.js
+└── package.json
+```
 
 ## Available Scripts
 
-In the project directory, you can run:
+- `npm start` - Runs the app in development mode
+- `npm test` - Runs the React testing suite
+- `npm run build` - Builds the app for production
+- `npm run cypress:open` - Opens Cypress Test Runner
+- `npm run cypress:run` - Runs Cypress tests in headless mode
+- `npm run test:e2e` - Runs Cypress tests with the dev server
 
-### `npm start`
+## License
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is for testing purposes only and is not licensed for public use.
