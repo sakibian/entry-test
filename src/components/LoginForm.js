@@ -15,15 +15,9 @@ function LoginForm({ onLogin }) {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Call the onLogin prop with the form data
-    onLogin(formData);
-  };
-
   return (
     <div className="login-form-container">
-      <form onSubmit={handleSubmit} className="login-form">
+      <form className="login-form">
         <h2>Login</h2>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
